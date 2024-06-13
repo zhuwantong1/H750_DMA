@@ -123,11 +123,11 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		//printf("1\r\n");
-		for(int i=0;i<sizeof(s_buf)/sizeof(uint8_t);i++)
-		{
-			printf("%d\r\n",s_buf[i]);
-		}
-//		HAL_UART_Transmit_DMA(&huart1,s_buf,4);
+//		for(int i=0;i<sizeof(s_buf)/sizeof(uint8_t);i++)
+//		{
+//			printf("%d\r\n",s_buf[i]);
+//		}
+		HAL_UART_Transmit_DMA(&huart1,s_buf,4);
 //		HAL_UART_Transmit_DMA(&huart1,s_buf,sizeof(s_buf));
 //		HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 //		HAL_Delay(300);
